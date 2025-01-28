@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione Bootstrap</title>
+    <!-- CSS di Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Griglia di colonne -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <div class="p-3 mb-2 bg-light rounded shadow-sm">Colonna 1</div>
+            </div>
+            <div class="col">
+                <div class="p-3 mb-2 bg-light rounded shadow-sm">Colonna 2</div>
+            </div>
+            <div class="col">
+                <div class="p-3 mb-2 bg-light rounded shadow-sm">Colonna 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Griglia con larghezza personalizzata per desktop -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="p-3 mb-2 bg-light rounded shadow-sm">50% Larghezza su Desktop</div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 mb-2 bg-light rounded shadow-sm">50% Larghezza su Desktop</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottoni -->
+    <div class="container mt-4 text-center">
+        <button class="btn btn-primary btn-lg">Primario</button>
+        <button class="btn btn-secondary btn-lg ml-3">Secondario</button>
+        <button class="btn btn-custom btn-lg ml-3">Personalizzato</button>
+    </div>
+
+    <!-- Card -->
+    <div class="container mt-4 text-center">
+        <div class="card" style="width: 18rem; margin: auto;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Immagine">
+            <div class="card-body">
+                <h5 class="card-title">Titolo della Card</h5>
+                <p class="card-text">Questa è una descrizione breve della card. Puoi aggiungere un testo qui.</p>
+                <a href="#" class="btn btn-primary">Vai</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
